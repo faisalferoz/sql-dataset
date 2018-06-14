@@ -148,6 +148,4 @@ func (m mysql) setDefaults(dc *models.DatabaseConfig) {
 	if dc.Port == "" && dc.Protocol == tcpConn {
 		dc.Port = mysqlPort
 	}
-
-	dc.Params["parseTime"] = "true"
 }
